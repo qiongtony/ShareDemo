@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.sharedemo.adapter.MyAdapter;
+
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recycler;
     @Override
@@ -14,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recycler = findViewById(R.id.recycler);
         recycler.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
-
+        recycler.setAdapter(new MyAdapter(this));
     }
 }
