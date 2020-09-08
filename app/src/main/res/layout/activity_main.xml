@@ -11,4 +11,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="click"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btnException"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="测试崩溃"
+        android:layout_marginBottom="50dp"
+        />
+
+
 </FrameLayout>

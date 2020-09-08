@@ -40,6 +40,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> {
     }
 
 
+    public void setDataList(List<String> dataList) {
+        this.dataList = dataList;
+        notifyDataSetChanged();
+    }
+
     class MyHolder extends RecyclerView.ViewHolder{
         TextView tvContent;
         public MyHolder(@NonNull View itemView) {
